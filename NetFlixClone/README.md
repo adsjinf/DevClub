@@ -15,4 +15,6 @@
 Repositório de exercício do Curso de HTML, CSS E JAVASCRIPT Clone do NETFLIX.</br>
 https://lp.rodolfomori.com.br/materiais-de-apoio</br>
 </br>link youtube</br>
-https://www.youtube.com/@canaldevclub
+https://www.youtube.com/@canaldevclub</br>
+</br>Link Material</br>
+https://lp.rodolfomori.com.br/materiais-de-apoio?&
