@@ -9,16 +9,20 @@ let botaoSom = document.querySelector(".botao-som");
 let video = document.querySelector(".video");
 let botao = document.querySelector(".link-info");
 let modal = document.querySelector(".modal");
+let audio = document.querySelector(".audio");
+let botaoAssitir = document.querySelector(".link-assistir");
 
 // Liga som
 botaoSom.addEventListener('click', ligaSom);
 
 function ligaSom(){
-    if(video.muted){
+    video.muted = !video.muted
+/*    if(video.muted){
         video.muted = false;
     } else {
         video.muted = true;
     }
+*/
 }
 
 // Mostrar o Modal
@@ -34,10 +38,14 @@ function esconderModal(){
     modal.style.display = "none";
 }
 
-window.onload = function() {
-    playSound();
+// Tocar o som na abertura
+// window -> Site / HTML - document
+
+window.addEventListener("click", tocarAudio)
+//window.addEventListener("load", tocarAudio)
+
+function tocarAudio(){
+    audio.play();
 }
 
-function playSound() {
-    const audio = new Audio('audio/tudum-netflix-sound.mp3');
-}
+botaoAssitir.addEventListener('click', tocarAudio)
