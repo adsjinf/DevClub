@@ -13,5 +13,5 @@
 
 <h5>
 Repositório de exercício do Curso de HTML, CSS E JAVASCRIPT de clima tempo</br>
-https://www.youtube.com/watch?v=v1jVqO6dx9A&list=PLsFVybaG4mOBmLZH65Z5HbR0FieLJJ1_r&index=4&pp=iAQB</br>
+https://www.youtube.com/watch?v=qxzqEuAOYZ4&t=2017s</br>
 </h5>
