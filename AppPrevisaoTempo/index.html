@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/65983f8b4f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>App Previsão Tempo</title>
+</head>
+
+<body>
+    <div class="caixa-maior">
+        <input type="text" placeholder="Digite o nome da cidade" class="input-cidade">
+        <button class="botao-buscar">
+            <img class="img-busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="buscar" onclick="cliqueiNoBotao()">
+        </button>
+        <div class="caixa-media">
+            <h2 class="tempo-cidade">Tempo em são Paulo</h2>
+            <p class="temperatura">21º C</p>
+            <div class="caixa-menor">
+                <img src="https://openweathermap.org/img/wn/04n.png" alt="icone-info-tempo" class="img-previsao">
+                <p class="texto-previsao">Nublado</p>
+            </div>
+            <p class="umidade">Umidade: 76%</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
