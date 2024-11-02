@@ -1,0 +1,35 @@
+version: '3.8'
+networks:
+  minha_rede:
+    driver: bridge
+services:
+  database:
+    build:
+      context: ./mongodb_rs
+      args:
+        MONGO_VERSION: "6.0"
+    networks:
+      - minha_rede
+    container_name: database
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: 123456
+      MONGO_INITDB_DATABASE: APINodeCRUD
+      MONGO_REPLICA_HOST: localhost
+      MONGO_REPLICA_PORT: 27017 #porta
+    volumes:
+      - ./dados:/data/db      
+  minha_api: 
+    build: .
+    command: 'sh -c "yarn install && yarn dev"'
+    container_name: minha_api
+    ports:
+      - 7777:7777
+    volumes:
+      - .:/usr/minha_api
+    networks:
+      - minha_rede
+    depends_on:
+      - database   
