@@ -33,6 +33,7 @@ router.post('/cadastro', async (req, res) => {
 
 // Login Usuario
 router.post('/login', async (req, res) => {
+    console.log(req.body)
     try {
         const userInfo = req.body
  
