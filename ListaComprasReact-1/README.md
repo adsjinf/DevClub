@@ -16,6 +16,6 @@
 </div><br/>
 
 <h5>
-Repositório de exercício do Curso de HTML, CSS E JAVASCRIPT do DevClub.</br>
+Repositório de exercício do Curso de REACT do Projeto de lista de compras DevClub.</br>
 https://www.youtube.com/watch?v=QLbrpjfltFs&list=PLsFVybaG4mOBmLZH65Z5HbR0FieLJJ1_r</br>
 </h5>
