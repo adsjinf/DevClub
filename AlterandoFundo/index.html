@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Alterando Cor e Fundo</title>
+</head>
+
+<body>
+    <main>
+        <h1>Tocar Cor</h1>
+        <button onclick="trocaCor('red')">Vermelho</button>
+        <button onclick="trocaCor('green')">Verder</button>
+        <button onclick="trocaCor('blue')">Azul</button>
+        <button onclick="trocaCor('yellow')">Amarelo</button>
+        <button onclick="corAleatoria()">Cor Aleatoria</button>
+        </br>
+        <input placeholder="Nome da Cor ou #HEX" type="text" class="input-cor">
+        <button onclick="aplicaCorPersonalizada()">Aplicar Cor</button>
+        <input type="color" onchange="trocaCor(this.value)">
+        </br>
+        <label>
+            Escolher Imagem
+            <input type="file" accept="image/*" onchange="escolherImagem(this.files[0])">
+        </label>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

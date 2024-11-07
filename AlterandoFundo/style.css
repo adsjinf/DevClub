@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: blueviolet;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    max-width: 80%;
+    padding: 20px;
+}
+
+button, input[type="color"], label {
+    cursor: pointer;
+}
+
+button, input[type="text"] {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-trim: 10px;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
